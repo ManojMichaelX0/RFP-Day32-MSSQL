@@ -1,9 +1,5 @@
 use payroll_service
 
-select *
-from employee_payroll
-Go
-
 ALTER TABLE employee_payroll
 ADD Basic_Pay Money
 Go
@@ -18,5 +14,9 @@ ADD Income_Tax Money
 Go
 ALTER TABLE employee_payroll
 ADD Net_Pay Money
+Go
+
+select *
+from employee_payroll
 Go
 
